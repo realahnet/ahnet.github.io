@@ -1,0 +1,66 @@
+---
+import "../styles/404Styles.css";
+import qrcode from "../assets/icons/qr-code.svg";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Error 404 | Ahnet</title>
+  </head>
+  <body>
+    <div class="main_div">
+      <h1 class="smiley">:(</h1>
+
+      <p>This website ran into a problem and needs fixing.</p>
+      <p>We are just collecting some data, and then you can continue!</p>
+
+      <p id="progress" class="percent_p">0% complete</p>
+
+      <div class="qr_div">
+        <img class="qr_code" src={qrcode.src} height="200px" width="200px" />
+
+        <div class="qr_text">
+          <p>
+            To learn about my experiences, check out <a href="/blog"
+              >my blogs!</a
+            >
+          </p>
+
+          <div class="p_support">
+            <p>If you call a support person, give them this info:</p>
+            <p>Stop Code: <code>Error 404</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let progress = 0;
+      const progressElement = document.getElementById("progress");
+
+      function updateProgress() {
+        if (!progressElement) return; // null check to avoid errors
+        progress += Math.floor(Math.random() * 2) + 1;
+
+        if (progress > 100) progress = 100;
+
+        progressElement.textContent = `${progress}% complete`;
+
+        if (progress < 100) {
+          setTimeout(updateProgress, Math.random() * 800 + 200);
+        } else {
+          setTimeout(() => {
+            window.location.href = "/";
+          }, 2500);
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(updateProgress, 1500);
+      });
+    </script>
+  </body>
+</html>
