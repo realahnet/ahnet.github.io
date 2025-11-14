@@ -9,6 +9,8 @@ time: "7 min"
 
 # Dual-booting CachyOS and Windows
 
+<img src="/posts/dual-boot-cachy/cachy-home-screen.png">
+
 ## Introduction
 
 Dual booting is a process where you install two or more operating systems together without losing the ability to use either of them. Before we get into dual booting, let's briefly understand what CachyOS is.

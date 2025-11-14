@@ -37,6 +37,13 @@ h6 {
   margin-bottom: 1em;
 }
 
+.markdown_body ul {
+  list-style-type: disc;
+}
+.markdown_body ol {
+  list-style-type: decimal;
+}
+
 .markdown_body ul,
 .markdown_body ol {
   margin-left: 1.5em;
@@ -57,4 +64,40 @@ h6 {
 
 .markdown_body a:hover {
   color: white;
+}
+
+.markdown_body img {
+  border-radius: 1.5%;
+}
+
+/* Override Tailwind's Configs */
+
+.markdown_body h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.markdown_body h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.markdown_body h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.markdown_body h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.markdown_body h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+.markdown_body h6 {
+  font-size: 0.67em;
+  font-weight: bold;
 }
