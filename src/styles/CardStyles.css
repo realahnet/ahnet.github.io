@@ -1,17 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: Poppins ExtraBold;
-  src: url(../assets/fonts/Poppins-ExtraBold.ttf);
+  font-family: Outfit Bold;
+  src: url(../assets/fonts/Outfit-Bold.ttf);
 }
 
-@font-face {
-  font-family: Poppins Regular;
-  src: url(../assets/fonts/Poppins-Regular.ttf);
-}
-
-@layer {
-  * {
-    font-family: Poppins Regular;
-  }
-}
