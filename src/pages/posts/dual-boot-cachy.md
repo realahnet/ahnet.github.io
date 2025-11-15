@@ -146,16 +146,3 @@ After rebooting, you will see a new menu appearing. Choose CachyOS from that men
 Congratulations! 🎉 You have successfully installed CachyOS alongside Windows! Now you can use CachyOS alongside Windows whenever you want by selecting the respective OS in the menu.
 
 ---
-
-<style>
-/* CODE BLOCKS */
-code {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffcc66;
-  font-family: "Fira Code", monospace;
-  padding: 2px 5px;
-  border-radius: 4px;
-  font-size: 0.95em;
-}
-
-</style>
