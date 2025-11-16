@@ -1,0 +1,19 @@
+@media (max-height: 850px) {
+  .short-screen-img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .short-screen-title {
+    font-size: 28px !important;
+  }
+
+  .short-screen-sub {
+    font-size: 16px !important;
+  }
+
+  .short-screen-btn {
+    font-size: 16px !important;
+    padding: 8px 18px !important;
+  }
+}
