@@ -88,6 +88,16 @@ h6 {
   font-size: 0.95em;
 }
 
+.markdown_body pre {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.markdown_body pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
 /* Override Tailwind's Configs */
 
 .markdown_body h1 {

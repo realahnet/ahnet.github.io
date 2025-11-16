@@ -57,35 +57,50 @@ Unlike Git, which is a tool, GitHub is an online platform where repositories are
 GitHub makes collaboration and project management easier: you can create remote repositories to store your code online, submit pull requests for code review, track progress and bugs through issues, and use built-in tools to work with teams with the best efficiency. GitHub also supports automated testing and deployment of your code whenever changes are pushed via GitHub Actions.
 
 ## Should You Learn Git?
+
 Absolutely. Learning Git is essential for any developer. The benefits of Git have already been outlined in this blog, but looking at it practically, using Git grants the developers the magic power to achieve maximum efficiency by collaborating together. It is a unique way that never ends up causing conflicts between different developers on the same project.
 
 Git and GitHub are widely used in the industry and in open-source projects. Knowing Git makes it easier to contribute to real-world projects and grants you the ability to participate in many real-world jobs that utilize version control systems.
 
 ## Practical Example
+
 Let's say I made a portfolio website, and I want to host it somewhere. Since a portfolio site is always mostly static, I can use GitHub Pages. GitHub allows you to host a static website as long as no backend stuff is being done completely for free! This is amazing for students that are looking forward to creating their own websites or getting started with web development.
 
-1. First, create a new GitHub repository.
+<ol>
 
-2. Configure your username and email ID:
-<code class="flex justify-center">git config --global user.name "user-name-here"</code>
-<code class="flex justify-center">git config --global user.email "user-email-here"</code>
+<li>First, create a new GitHub repository.</li>
+<li>
+    Configure your username and email ID:
+    <pre class="text-center max-w-full overflow-x-auto"><code class="block">git config --global user.name "user-name-here"</code></pre>
+    <pre class="text-center max-w-full overflow-x-auto"><code class="block">git config --global user.email "user-email-here"</code></pre>
+</li>
 
-3. Initialize your local repository with:
-<code class="flex justify-center">git init</code>
+<li>
+    Initialize your local repository with:
+    <code class="block text-center w-full">git init</code>
+</li>
 
-4. Link your local repository with GitHub by running the following command:
-<code class="flex justify-center">git remote add origin repo-url</code>
+<li>
+    Link your local repository with GitHub by running the following command:
+    <code class="block text-center w-full">git remote add origin repo-url</code>
+</li>
 
-5. Stage your commits by running the following command:
-<code class="flex justify-center">git add .</code>
+<li>
+    Stage your commits by running the following command:
+    <code class="block text-center w-full">git add .</code>
+    <p class="italic">Note: using '.' here adds all of the files inside the folder.</p>
+</li>
 
-<p class="italic">Note: using '.' here adds all of the files inside the folder.</p>
+<li>
+    Create a commit message by running the following command:
+    <code class="block text-center w-full">git commit -m "message-here"</code>
+</li>
 
-6. Create a commit message by running the following command:
-<code class="flex justify-center">git commit -m "message-here"</code>
-
-7. Push your changes to GitHub by running the following command:
-<code class="flex justify-center">git push -u origin branch-name</code>
+<li>
+    Push your changes to GitHub by running the following command:
+    <code class="block text-center w-full">git push -u origin branch-name</code>
+</li>
+</ol>
 
 Your code should now be on GitHub!
 
