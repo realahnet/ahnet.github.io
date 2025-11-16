@@ -5,7 +5,7 @@ name: "An Introduction to Git and GitHub"
 desc: "In this blog, we'll look at Git and GitHub with their real-world applications."
 top_desc: "Git and GitHub"
 date: "12 November 2025"
-time: "1 min"
+time: "8 min"
 ---
 
 # An Introduction to Git and GitHub
