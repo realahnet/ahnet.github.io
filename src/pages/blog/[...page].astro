@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../Components/Card.astro";
+import Pagination from "../../Components/Pagination.astro";
+
+export function getStaticPaths({ paginate }) {
+  const postFiles = import.meta.glob("./*.md", { eager: true }) as Record<
+    string,
+    any
+  >;
+  const allPosts = Object.values(postFiles).sort((a, b) => {
+    const dateA = new Date(a.frontmatter.date);
+    const dateB = new Date(b.frontmatter.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  return paginate(allPosts, {
+    pageSize: 10,
+  });
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout title="Blogs | Ahnet">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-15 lg:mt-20 mb-15">
+    <div class="heading">
+      <a
+        class="text-[#cccccc] transition-colors duration-300 hover:text-[#acacab]"
+        href="/">Home</a
+      >
+      <h1 style="font-family: Outfit Bold;" class="mt-2 text-4xl">Blogs</h1>
+    </div>
+
+    {
+      page.data.map((post) => {
+        return (
+          <Card
+            name={post.frontmatter.name}
+            link={post.url}
+            desc={post.frontmatter.desc}
+            date={post.frontmatter.date}
+            time={post.frontmatter.time}
+          />
+        );
+      })
+    }
+    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+  </div>
+</BaseLayout>
