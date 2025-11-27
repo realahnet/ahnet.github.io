@@ -1,0 +1,29 @@
+baseURL = 'https://realahnet.github.io'
+languageCode = 'en-us'
+title = 'Ahnet'
+theme = 'PaperMod'
+
+[params.profileMode]
+enabled = true
+title = "Kumail Hanafi"
+subtitle = "I exist 🥲"
+imageUrl = "https://avatars.githubusercontent.com/u/57623523"
+imageTitle = "Profile Picture"
+imageWidth = 300
+imageHeight = 300
+
+  [[params.profileMode.buttons]]
+  name = "About Me"
+  url = "/about"
+
+  [[params.profileMode.buttons]]
+  name = "My Blogs"
+  url = "/posts"
+
+[[params.socialIcons]]
+name = "GitHub"
+url = "https://github.com/realahnet"
+
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://linkedin.com/in/kumail-hanafi"
