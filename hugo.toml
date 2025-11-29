@@ -27,3 +27,13 @@ url = "https://github.com/realahnet"
 [[params.socialIcons]]
 name = "LinkedIn"
 url = "https://linkedin.com/in/kumail-hanafi"
+
+[[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts/"
+
+[[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags"
