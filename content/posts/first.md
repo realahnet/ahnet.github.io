@@ -1,5 +1,5 @@
 ---
-title: "My first blog post"
+title: "My First Blog Post"
 date: 2025-11-29
 draft: false
 ShowToc: true
