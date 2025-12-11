@@ -1,6 +1,6 @@
 baseURL = 'https://realahnet.github.io'
 languageCode = 'en-us'
-title = 'Ahnet'
+title = 'ahnet'
 theme = 'PaperMod'
 
 [params.profileMode]
